@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="106px" height="40px" viewBox="0 0 106 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>o-brkt</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="o-brkt" transform="translate(3.000000, 3.000000)" stroke="#0091FF" stroke-width="4.6">
+            <g id="Group-6-Copy" transform="translate(86.274510, 17.000000) scale(-1, 1) translate(-86.274510, -17.000000) translate(72.549020, 0.000000)">
+                <path d="M27.0549532,0.206511176 L0,17.1404276" id="Line" stroke-linejoin="round"></path>
+                <path d="M27.0549532,17.5395725 L-5.32907052e-15,33.7934888" id="Line" transform="translate(13.527477, 25.666531) scale(1, -1) translate(-13.527477, -25.666531) "></path>
+            </g>
+            <g id="Group-6-Copy">
+                <polyline id="Line" stroke-linejoin="round" points="27.0549532 0.206511176 13.4676367 8.71092364 0 17.1404276"></polyline>
+                <path d="M27.0549532,17.5395725 L-5.32907052e-15,33.7934888" id="Line" transform="translate(13.527477, 25.666531) scale(1, -1) translate(-13.527477, -25.666531) "></path>
+            </g>
+        </g>
+    </g>
+</svg>
