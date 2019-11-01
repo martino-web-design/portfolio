@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Color Picker</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <label for="">Color format: </label>
+    <select onchange="changeValues();">
+      <option value="rgb">RGB</option>
+      <option value="hsl">HSL</option>
+    </select>
+
+      <div class="squareRGB">
+        <!-- color appears goes here -->
+        <p id="format">RGB values</p>
+      </div>
+
+    <div class="container">
+      <ul id="sliderGroup">
+        <li>
+          <input id="sliderH" type="range" min="0" max="255">
+          <div class="">
+            <label id="labelH"> R: </label><span id="outputH"></span>
+          </div>
+        </li>
+        <li>
+          <input id="sliderS" type="range" min="0" max="255">
+          <div class="">
+            <label id="labelS"> G: </label><span id="outputS"></span>
+          </div>
+        </li>
+        <li>
+          <input id="sliderL" type="range" min="0" max="255">
+          <div class="">
+            <label id="labelL"> B: </label><span id="outputL"></span>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

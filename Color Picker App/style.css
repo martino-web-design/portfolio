@@ -1,0 +1,65 @@
+/* Color Palete */
+body {
+  background-color: #000;
+  color: #fff;
+  padding-top: .5em;
+  font-family: 'Montserrat';
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+  padding: 1em 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.squareRGB {
+  width: 80%;
+  max-width: 300px;
+  height: 200px;
+  margin: 1em auto;
+  position: relative;
+}
+
+#format {
+  position: absolute;
+  margin: 0;
+  bottom: -2em;
+  left: 1em;
+}
+
+#sliderH,
+#sliderS,
+#sliderL {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: slategrey;
+  outline: none;
+  width: 250px;
+  height: 10px;
+  margin-bottom: 1em;
+  border-radius: 5px;
+}
+
+#sliderH::-webkit-slider-thumb,
+#sliderS::-webkit-slider-thumb,
+#sliderL::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: dodgerblue;
+  border-radius: 50%;
+}
+
+#sliderH::-webkit-slider-thumb:hover,
+#sliderS::-webkit-slider-thumb:hover,
+#sliderL::-webkit-slider-thumb:hover {
+  transform: scale(1.3);
+}
