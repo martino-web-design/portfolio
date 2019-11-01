@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya|Bubblegum+Sans|Open+Sans&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Demo Travel Blog</title>
+  </head>
+
+  <body id="home" data-spy="scroll" data-target=".navbar" data-offset="150">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="img/florencecoffeeThumb.jpg" class="nav-thumb"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#restaurants">Restaurants</a>
+            <a class="nav-item nav-link" href="#cities">Cities</a>
+          </div>
+        </div>
+      </div>
+   </nav>
+
+    <!--  Jumbotron  -->
+    <header>
+      <div class="jumbotron jumbotron-fluid bg-primary mt-5">
+       <div class="container">
+         <h1 class="display-5 pt-4">A Blog of Travels</h1>
+         <p class="header-p pt-3">Great cities to explore and fun places to eat!</p>
+       </div>
+       <!--  Hidden Flash Message -->
+       <div id="flashMessage">
+           Welcome to our travel blog. We hope you enjoy it!
+       </div>
+      </div>
+    </header>
+
+    <!-- Container to hold rest of content until footer -->
+    <div class="container">
+      <p id="date"><!-- current date here --></p>
+      <div class="row">
+        <div class="col">
+          <h1 class="content-h1">A Trip Through Spain</h1>
+          <p class="px-sm-2 px-lg-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+      <!-- Row 1 -->
+      <h2 id="restaurants">Restaurants</h2>
+      <div class="row">
+        <div class="col-12">
+          <img src="img/restaurant-1.jpg" class="img-fluid my-4" alt="Restaurant Dining Table">
+          <h3 class="card-title">Best in Town</h3>
+          <p class="text-justify px-2 px-md-4 px-lg-5">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="row">
+            <div class="col-6 col-md-12">
+              <img src="img/food-1.jpg" class="img-fluid my-4 photo-image rotate-r" alt="Appetizers">
+              <p class="px-sm-2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+            </div>
+            <div class="col-6 col-md-12">
+              <img src="img/food-2.jpg" class="img-fluid my-4 photo-image rotate-l" alt="Pizza">
+              <p class="px-sm-2">Atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-8">
+          <img src="img/restaurant-2.jpg" class="img-fluid my-4" alt="Outside Restaurant Patio">
+          <p class="text-justify px-2 px-lg-5">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate.</p>
+        </div>
+      </div>
+      <hr>
+      <!-- Row 2 -->
+      <h2 id="cities">Cities</h2>
+      <div  class="row">
+        <div class="col-12">
+          <img src="img/plaza.jpg" class="img-fluid my-4" alt="Bikes">
+          <h3 class="card-title">Sites to See</h3>
+          <p class="text-justify px-2 px-md-4 px-lg-5">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-8">
+          <img src="img/isabela.jpg" class="img-fluid my-4" alt="City Narrow Alley">
+          <p class=" px-2 px-lg-5">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="row">
+            <div class="col-6 col-md-12">
+              <img src="img/toledo.jpg" class="img-fluid my-4 photo-image rotate-l" alt="">
+              <p class="px-sm-2">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum.</p>
+            </div>
+            <div class="col-6 col-md-12">
+              <img src="img/mayor.jpg" class="img-fluid my-4 photo-image rotate-r" alt="">
+              <p class="px-sm-2">Atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+   </div> <!-- /container  -->
+
+   <footer>
+    <div class="col-md text-center pt-3 pb-3">
+      <small>&copy; 2019 A Blog of Travels</small>
+    </div>
+   </footer>
+
+   <script   src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   <script src="script.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>
