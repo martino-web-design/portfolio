@@ -170,6 +170,14 @@ font-family: 'Roboto Mono', monospace;
     font-size: 24px
   }
 
+  h3 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
   .jumbotron h1 {
     font-size: 30px;
   }
