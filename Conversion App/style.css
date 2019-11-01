@@ -1,0 +1,88 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25em;
+  background-color: hsl(0deg, 0%, 70%);
+}
+
+p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.5em;
+  color: hsl(0deg, 0%, 10%);
+  text-align: center;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+span {
+  font-size: 1.5rem;
+  font-variant: small-caps;
+  color: hsl(0deg, 0%, 90%);
+  width: 175px;
+}
+
+input {
+  font-size: 1.25rem;
+  width: 85px;
+  margin-left: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  box-shadow: 2px 2px 8px #555 inset;
+  border-radius: 5px;
+  position: absolute;
+  right: 15px;
+  bottom: 10px;
+}
+
+select{
+  margin-bottom: 10px;
+  font-size: 1em; 
+}
+
+li {
+  list-style: none;
+  position: relative;
+}
+
+.item {
+  width: 300px;
+  display: inline-block;
+  background-color: #007bff;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 5px;
+}
+
+@media (max-width: 600px){
+h1{
+  display: none;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    margin-top: 30px;
+    background-color: hsl(0deg, 0%, 10%);
+    align-items: center;
+  }
+
+  input {
+    right: 35px;
+  }
+
+  span {
+    margin-left: 5px;
+  }
+
+  .item {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .item:nth-child(even){
+    background-color: hsl(0deg, 0%, 50%);
+  }
+}
