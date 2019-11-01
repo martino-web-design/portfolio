@@ -1,0 +1,40 @@
+
+
+body {
+  background-color: #c0c5ce;
+  margin-top: 3.5em;
+  background-image: url('grid-pattern.svg');
+  background-repeat: repeat;
+}
+
+h1 {
+  font-family: 'Roboto Mono';
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.icon-container {
+  margin: 50px auto;
+  text-align: center;
+}
+
+.icons {
+  border-radius: 3px;
+  padding: 25px;
+  box-shadow: inset 0px 0px 10px 2px #333;
+  width: 50%;
+  background-color: #fff;
+}
+
+ @media (min-width: 550px) {
+   h1 {
+     font-size: 3em;
+     text-align: left;
+     margin-left: 10%;
+   }
+ }

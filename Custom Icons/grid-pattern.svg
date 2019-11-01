@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="57px" viewBox="0 0 46 57" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>Group Copy</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" stroke="#979797" x="-5.5" y="-6.5" width="73" height="149"></rect>
+        <g id="Group" transform="translate(-5.500000, -7.000000)" stroke="#979797" stroke-linecap="square">
+            <path d="M11,0 L11,150" id="Line"></path>
+            <path d="M6,0 L6,150" id="Line-Copy-7"></path>
+            <path d="M20,0 L20,150" id="Line-Copy"></path>
+            <path d="M15,0 L15,150" id="Line-Copy-8"></path>
+            <path d="M25,0 L25,150" id="Line-Copy-9"></path>
+            <path d="M29,0 L29,150" id="Line-Copy-2"></path>
+            <path d="M33,0 L33,150" id="Line-Copy-10"></path>
+            <path d="M37,0 L37,150" id="Line-Copy-3"></path>
+            <path d="M42,0 L42,150" id="Line-Copy-11"></path>
+            <path d="M46,0 L46,150" id="Line-Copy-4"></path>
+            <path d="M51,0 L51,150" id="Line-Copy-12"></path>
+            <path d="M60,-46 L60,73" id="Line-Copy-25" transform="translate(60.000000, 13.500000) scale(-1, -1) rotate(90.000000) translate(-60.000000, -13.500000) "></path>
+            <path d="M60,-52 L60,67" id="Line-Copy-24" transform="translate(60.000000, 7.500000) scale(-1, -1) rotate(90.000000) translate(-60.000000, -7.500000) "></path>
+            <path d="M60,-35 L60,84" id="Line-Copy-23" transform="translate(60.000000, 24.500000) scale(-1, -1) rotate(90.000000) translate(-60.000000, -24.500000) "></path>
+            <path d="M60,-41 L60,78" id="Line-Copy-22" transform="translate(60.000000, 18.500000) scale(-1, -1) rotate(90.000000) translate(-60.000000, -18.500000) "></path>
+            <path d="M60,-29 L60,90" id="Line-Copy-21" transform="translate(60.000000, 30.500000) scale(-1, -1) rotate(90.000000) translate(-60.000000, -30.500000) "></path>
+            <path d="M60,-24 L60,95" id="Line-Copy-20" transform="translate(60.000000, 35.500000) scale(-1, -1) rotate(90.000000) translate(-60.000000, -35.500000) "></path>
+            <path d="M60,-19 L60,100" id="Line-Copy-19" transform="translate(60.000000, 40.500000) scale(-1, -1) rotate(90.000000) translate(-60.000000, -40.500000) "></path>
+            <path d="M60,-13 L60,106" id="Line-Copy-18" transform="translate(60.000000, 46.500000) scale(-1, -1) rotate(90.000000) translate(-60.000000, -46.500000) "></path>
+            <path d="M60,-7 L60,112" id="Line-Copy-17" transform="translate(60.000000, 52.500000) scale(-1, -1) rotate(90.000000) translate(-60.000000, -52.500000) "></path>
+            <path d="M60,-2 L60,117" id="Line-Copy-16" transform="translate(60.000000, 57.500000) scale(-1, -1) rotate(90.000000) translate(-60.000000, -57.500000) "></path>
+            <path d="M60,4 L60,123" id="Line-Copy-13" transform="translate(60.000000, 63.500000) scale(-1, -1) rotate(90.000000) translate(-60.000000, -63.500000) "></path>
+        </g>
+        <rect id="Rectangle-Copy" stroke="#979797" transform="translate(68.705729, 30.305990) scale(-1, -1) rotate(90.000000) translate(-68.705729, -30.305990) " x="32.2057292" y="-44.1940104" width="73" height="149"></rect>
+        <g id="Group-Copy" transform="translate(69.000000, 31.000000) scale(-1, -1) rotate(90.000000) translate(-69.000000, -31.000000) translate(38.000000, -44.000000)" stroke="#979797" stroke-linecap="square">
+            <path d="M11.5,1.15463195e-14 L11.5,150" id="Line-Copy-8"></path>
+            <path d="M28.5,0 L28.5,150" id="Line-Copy-2"></path>
+            <path d="M33.5,-1.50990331e-14 L33.5,150" id="Line-Copy-10"></path>
+            <path d="M50.5,3.90798505e-14 L50.5,150" id="Line-Copy-4"></path>
+            <path d="M61.5,-1.15463195e-14 L61.5,150" id="Line-Copy-5"></path>
+            <path d="M61.5,-1.15463195e-14 L61.5,150" id="Line-Copy-6"></path>
+        </g>
+    </g>
+</svg>
