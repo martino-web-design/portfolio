@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Guitar Tuner</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="title">
+      <h1>Guitar Tuner</h1>
+      <p>Select your tuning preference.</p>
+      <p>Tap a string to hear it's tone.</p>
+    </div>
+
+    <audio class="D6" src="audio/D6-chord.m4a"></audio>
+    <audio class="E6" src="audio/E6-chord.m4a"></audio>
+
+    <audio class="A5" src="audio/A5-chord.m4a"></audio>
+    <audio class="B5" src="audio/B5-chord.m4a"></audio>
+    <audio class="G5" src="audio/G5-chord.m4a"></audio>
+
+    <audio class="D4" src="audio/D4-chord.m4a"></audio>
+    <audio class="E4" src="audio/E4-chord.m4a"></audio>
+
+    <audio class="F3sharp" src="audio/F3sharp-chord.m4a"></audio>
+    <audio class="G3" src="audio/G3-chord.m4a"></audio>
+    <audio class="G3sharp" src="audio/G3sharp-chord.m4a"></audio>
+
+    <audio class="A2" src="audio/A2-chord.m4a"></audio>
+    <audio class="B2" src="audio/B2-chord.m4a"></audio>
+
+    <audio class="D1" src="audio/D1-chord.m4a"></audio>
+    <audio class="E1" src="audio/E1-chord.m4a"></audio>
+
+    <div class="container">
+
+      <select>
+        <option value="stan">Standard</option>
+        <option value="D">Open D</option>
+        <option value="E">Open E</option>
+        <option value="G">Open G</option>
+      </select>
+
+      <ul class="keys">
+        <li>E</li>
+        <li>A</li>
+        <li>D</li>
+        <li>G</li>
+        <li>B</li>
+        <li>E</li>
+      </ul>
+
+      <ul class="strings">
+        <li class="E6">
+          <img src="line4.svg" alt="">
+        </li>
+        <li class="A5">
+          <img src="line4.svg" alt="">
+        </li>
+        <li class="D4">
+          <img src="line4.svg" alt="">
+        </li>
+        <li class="G3">
+          <img src="line4.svg" alt="">
+        </li>
+        <li class="B2">
+          <img src="line4.svg" alt="">
+        </li>
+        <li class="E1">
+          <img src="line4.svg" alt="">
+        </li>
+      </ul>
+    </div>    <!-- end container  -->
+
+    <!-- Modal -->
+        <div class="modal-overlay">
+          <div class="modal-wrap">
+            <i class="material-icons">clear</i>
+            <div></div>
+          </div>
+        </div>
+      <!-- end Modal -->
+
+
+    <script   src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous">
+    </script>
+    <script src="script.js" type="text/javascript"></script>
+  </body>
+</html>
