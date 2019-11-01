@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia</title>
+    <link href="https://fonts.googleapis.com/css?family=Racing+Sans+One|Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <h1>Famous Landmarks Trivia</h1>
+    <p>Guess the landmark, then click the image for the answer.</p>
+    <p>For a hint, select a country from the menu below.</p>
+    <div id="triviaApp">
+      <select v-on:change="filterList">
+        <option value="">Select a country</option>
+        <option v-for="choice in selectList">{{choice}}</option>
+      </select>
+      <div class="container">
+        <div v-show="location === '' || location === card.location" v-on:click="toggleSide(card)" v-for="card in cards" >
+          <transition name="flip">
+            <img class="card" v-bind:src="card.image" v-if="!card.flipped">
+            <p class="card" v-else>{{card.back}}</p>
+          </transition>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
+    <script type="text/javascript" src="script.js"></script>
+
+  </body>
+</html>
