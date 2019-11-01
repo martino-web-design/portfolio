@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Courgette',cursive;
+}
+
+body {
+  margin: auto;
+  background-color: lightgrey;
+  text-align: center;
+  font-size: 18px;
+}
+
+#x-start {
+  display: none;
+}
+
+.square {
+  float: left;
+  width: 75px;
+  height: 75px;
+  border: 2px solid black;
+  cursor: pointer;
+  text-align: center;
+}
+
+.container {
+  width: 229px;
+  height: 229px;
+  margin: 0 auto;
+  border: 2px solid black;
+  background-color: white;
+}
+
+.row {
+ clear: both;
+}
+
+.X {
+  background-color: #dc3545;
+  font-size: 60px;
+}
+
+.O {
+  font-size: 60px;
+  background-color: #007bff;
+}
+
+.X::after {
+  content: "X";
+}
+
+.O::after {
+  content: "O";
+}
+
+/* -- Modal -- */
+.modal {
+  text-align: center;
+  margin-top: 3em;
+}
+
+button {
+  border: 2px solid #28a745;
+  background-color: #28a745;
+  border-radius: 5px;
+  padding: 6px 16px;
+  color: #fff;
+  font-family: 'Lato',sans-serif;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.modal-overlay {
+  z-index: 100;
+  transition: all .8s;
+  position: fixed;
+  top: 75%;
+  left: 30%;
+  right: 30%;
+  background-color: #28a745;
+  border-radius: 5px;
+  text-align: center;
+  opacity: 0;
+}
+
+.modal-wrap {
+  position: relative;
+  margin: 0 auto;
+  padding: .5em;
+  color: #fff;
+}
+
+@media (min-width: 550px) {
+  h1 {
+  font-size: 60px;
+  }
+
+  .modal-wrap {
+    padding: 1em;
+    font-size: 20px;
+  }
+}
