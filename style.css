@@ -59,15 +59,21 @@ footer {
   justify-content: center;
   background-image: url('img/icon-box.svg');
   background-position: center;
-  height: 100vh;
+  margin-top: 75px;
 }
 
 .jumbotron h2 {
   color: #777;
 }
 
+.jumbo-container {
+  max-height: 400px;
+  margin: 2em;
+}
+
 .bracket {
   vertical-align: baseline;
+  height: 30px;
 }
 
 .thumb {
@@ -88,8 +94,9 @@ footer {
   color: #fff;
   text-align: center;
   background-color: #c0c5ce;
-  height: 60vh;
-  margin-bottom: 30px;
+  height: 400px;
+  max-width: 375px;
+  margin: 0 auto 30px;
   padding: 10px;
   border-radius: 5px;
   box-shadow: 3px 3px 10px 0px #333;
@@ -167,11 +174,11 @@ font-family: 'Roboto Mono', monospace;
 
 @media (max-width: 449px) {
   h2 {
-    font-size: 24px
+    font-size: 28px
   }
 
   h3 {
-    font-size: 20px;
+    font-size: 24px;
   }
 
   p {
@@ -203,14 +210,19 @@ font-family: 'Roboto Mono', monospace;
 
 @media (min-width: 576px){
   .overlay {
-    height: 50vh;
+    /* height: 50vh; */
   }
+
   .contact-logo {
     width: 200px;
   }
 }
 
 @media (min-width: 768px){
+  .jumbotron {
+    height: 100vh;
+  }
+
   .contact {
     min-height: 55vh;
     align-items: center;
