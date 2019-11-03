@@ -57,7 +57,7 @@ footer {
 }
 
 .rotate-r {
-  transform: rotate(5deg);
+  transform: rotate(4deg);
 }
 
 .rotate-l {
@@ -90,11 +90,6 @@ footer {
 
  p {
     font-size: 14px;
- }
-
- .col-6 {
-   padding-right: 15px;
-   padding-left: 15px;
  }
 }
 
