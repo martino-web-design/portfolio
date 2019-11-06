@@ -18,6 +18,7 @@ select, option {
 select {
   margin: 10px;
   background-color: #51aae5;
+  font-size: 1rem;
 }
 
 img {
