@@ -31,6 +31,27 @@ footer {
   border: none;
 }
 
+.nav-item {
+  position: relative;
+}
+
+.nav-item::after {
+  position: absolute;
+  content: "";
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 0px;
+  transform: scale(0);
+  background: hsla(180, 38%, 30%, 0.5);
+  transition: transform 300ms ease-in,
+              height 300ms ease-in;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: hsla(180, 38%, 30%, 0.5);
+}
+
 .jumbotron {
   background:
    linear-gradient(rgba(0, 212, 255, 0.1), rgba(255, 255, 0, 0.1)),
@@ -109,5 +130,10 @@ footer {
 
   img {
     max-height: 60vh;
+  }
+
+  .nav-item:hover::after {
+    transform: scale(1);
+    height: 2px;
   }
 }
