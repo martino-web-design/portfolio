@@ -7,11 +7,16 @@ body {
   margin: auto;
   background-color: lightgrey;
   text-align: center;
-  font-size: 18px;
 }
 
-#x-start {
-  display: none;
+button {
+  border: 2px solid #28a745;
+  background-color: #28a745;
+  border-radius: 5px;
+  padding: 1em;
+  color: #fff;
+  font-family: 'Lato',sans-serif;
+  font-size: 1em;
 }
 
 .square {
@@ -24,6 +29,7 @@ body {
 }
 
 .container {
+  position: relative;
   width: 229px;
   height: 229px;
   margin: 0 auto;
@@ -54,33 +60,53 @@ body {
 }
 
 /* -- Modal -- */
-.modal {
-  text-align: center;
-  margin-top: 3em;
+.modal-outer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-button {
-  border: 2px solid #28a745;
-  background-color: #28a745;
-  border-radius: 5px;
-  padding: 6px 16px;
-  color: #fff;
+.close {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #fff;
+  color: #dc3545;
   font-family: 'Lato',sans-serif;
-  font-size: 14px;
-  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.close:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.start-modal {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .modal-overlay {
   z-index: 100;
-  transition: all .8s;
   position: fixed;
-  top: 75%;
-  left: 30%;
-  right: 30%;
+  top: 30%;
+  left: 10%;
+  right: 10%;
+  max-width: 300px;
   background-color: #28a745;
   border-radius: 5px;
   text-align: center;
-  opacity: 0;
+  margin: auto;
 }
 
 .modal-wrap {
@@ -88,6 +114,14 @@ button {
   margin: 0 auto;
   padding: .5em;
   color: #fff;
+}
+
+.cover{
+  position: absolute;
+  top: 35%;
+  left: 10%;
+  right: 10%;
+  max-width: 300px;
 }
 
 @media (min-width: 550px) {
