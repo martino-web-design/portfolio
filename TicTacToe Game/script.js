@@ -3,18 +3,18 @@ $(document).ready(function(){
 //  Start function resets board and selects player to begin
   function start(){
     $('#game').click(function(){
-      $('.start-modal').css('display', 'none');
+    $('.start-modal').css({ 'display': 'none'});
       $('.square').removeClass('X').removeClass('O');
 
       // Player selection, randomly determines if player X or O starts game
       var selection = Math.round(Math.random()+1);
       if (selection === 1){
-        $('.modal-outer').css('display', 'block');
+        $('.modal-outer').css({'display':'block', 'transform':'scale(1)'});
         $('.modal-wrap p').text("Player X gets to go first!");
         player = 1;
       }
       else {
-        $('.modal-outer').css('display', 'block');
+        $('.modal-outer').css({'display':'block', 'transform':'scale(1)'});
         $('.modal-wrap p').text("Player O gets to go first!");
         player = 2;
       }
@@ -53,9 +53,11 @@ $(document).ready(function(){
 // Tie function, determines if game is tied
   function tie(){
     if (count== 9){
-      $('.modal-outer').css('display','block');
+      $('.modal-outer').css({'display':'block', 'transform':'scale(1)'});
       $('.modal-wrap p').text("It's a tie, have another go!");
-      $('.start-modal').css('display', 'block');
+      $('.start-modal').css({'display': 'block'});
+      $('button').text('Play again!');
+      $('.cover').css({'opacity': '0'});
     }
   }
 
@@ -66,27 +68,30 @@ win_1 = 0;
 win_2 = 0;
 
 $('.close').click(function(){
-  $('.modal-outer').css('display', 'none');
+  $('.modal-outer').css({'transform': 'scale(0)'});
+  $('.cover').css({'opacity': '1'})
 });
 
 // ----- game play begins with click function
 $('.square').click(function(){
    if ($(this).hasClass('X') || $(this).hasClass('O') ){
-     $('.modal-outer').css('display','block');
+     $('.modal-outer').css({'display':'block', 'transform':'scale(1)'});
      $('.modal-wrap p').text("This spot is already taken, try again!");
     }
    else if (player === 1){
      $(this).addClass('X');
 
         if (winner('X')){
-            $('.modal-outer').css('display','block');
+            $('.modal-outer').css({'display':'block', 'transform':'scale(1)'});
             $('.modal-wrap p').text("Player X is the winner!");
             win_1+= 1;
             $('#win_1').text("Player X has " + win_1 + " win!");
             if(win_1>1){
               $('#win_1').text("Player X has " + win_1 + " wins!");
             }
-            $('.start-modal').css('display', 'block');
+            $('.start-modal').css({'display': 'block'});
+            $('button').text('Play again!');
+            $('.cover').css({'opacity': '0'});
             }
         else {
             count+= 1;
@@ -98,14 +103,16 @@ $('.square').click(function(){
       $(this).addClass('O');
 
         if (winner('O')){
-            $('.modal-outer').css('display','block');
+            $('.modal-outer').css({'display':'block', 'transform':'scale(1)'});
             $('.modal-wrap p').text("Player O is the winner!");
             win_2+= 1;
             $('#win_2').text("Player O has " + win_2 + " win!");
             if(win_2>1){
               $('#win_2').text("Player O has " + win_2 + " wins!");
             }
-            $('.start-modal').css('display', 'block');
+            $('.start-modal').css({'display': 'block'})
+            $('button').text('Play again!');
+            $('.cover').css({'opacity': '0'});
             }
         else {
            count+= 1;
