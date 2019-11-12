@@ -32,7 +32,7 @@ button {
   position: relative;
   width: 229px;
   height: 229px;
-  margin: 0 auto;
+  margin: 50px auto 0;
   border: 2px solid black;
   background-color: white;
 }
@@ -66,18 +66,20 @@ button {
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  transition:  transform 300ms ease-in 100ms;
+  transition:  opacity 300ms ease-in 100ms,
+               transform 300ms ease-in 100ms;
 }
 
 .close {
+  z-index: 100;
   position: absolute;
-  right: 30px;
-  top: 30px;
-  width: 30px;
-  height: 30px;
+  right: -10px;
+  top: -10px;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
   background: #fff;
-  color: #dc3545;
+  color: #000;
   font-family: 'Lato',sans-serif;
   display: flex;
   justify-content: center;
@@ -96,7 +98,7 @@ button {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 1;
-  transition: opacity 500ms ease-in 200ms;
+  transition: opacity 300ms ease-in 300ms;
 }
 
 .modal-overlay {
@@ -105,10 +107,7 @@ button {
   top: 30%;
   left: 10%;
   right: 10%;
-  max-width: 300px;
-
-  /* background-color: #28a745; */
-  /* border-radius: 5px; */
+  width: 200px;
   background: #000;
   text-align: center;
   margin: auto;
@@ -121,7 +120,7 @@ button {
   color: #fff;
 }
 
-.cover{
+.start-btn{
   position: absolute;
   bottom: -70%;
   left: 20%;
