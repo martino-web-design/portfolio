@@ -110,6 +110,16 @@ const measurements = [
     name: 'MH-KH',
     conv: '1mph= 1.61kph',
     title: 'MPH to KPH'
+  },
+  { type: 'torque',
+    name: 'NM-FT',
+    conv: '1Nm= 0.74ftlb',
+    title: 'Newton Meter to FtLb'
+  },
+  { type: 'torque',
+    name: 'FT-NM',
+    conv: '1ftlb= 1.36Nm',
+    title: 'Foot Pound to Nm'
   }
 ];
 
@@ -295,6 +305,20 @@ function mhKh(x){
   const k = m * 1.60934;
   return k.toFixed(2);
 }
+
+// Nm to FtLb
+function nmFt(x){
+  const n = x;
+  const f = n * 0.73756;
+  return f.toFixed(2);
+}
+
+// FtLb to Nm
+function ftNm(x){
+  const f = x;
+  const n = f/0.73756;
+  return n.toFixed(2);
+}
 // --- end conversions formulas ---
 
 // Input on change function for conversions
@@ -454,6 +478,20 @@ $('li').change(function(){
       const val = input.value;
       const span = li.querySelector('span');
       span.textContent = val + 'mph= ' + mhKh(val) + 'kph';
+      li.insertBefore(span, input);
+      }
+  // Nm to Ft Lb
+    else if($(this).attr('data-name') === "NM-FT"){
+      const val = input.value;
+      const span = li.querySelector('span');
+      span.textContent = val + 'Nm= ' + nmFt(val) + 'ftlb';
+      li.insertBefore(span, input);
+      }
+  // Nm to Ft Lb
+    else if($(this).attr('data-name') === "FT-NM"){
+      const val = input.value;
+      const span = li.querySelector('span');
+      span.textContent = val + 'ftlb= ' + ftNm(val) + 'Nm';
       li.insertBefore(span, input);
       }
 }); //  -- end conversions OnChange function --
