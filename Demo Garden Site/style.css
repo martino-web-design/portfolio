@@ -35,11 +35,15 @@ a {
   color: inherit;
   text-decoration: none;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 
 img {
   width: 100%;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 /* --- Custom Slider --- */
@@ -125,21 +129,39 @@ img {
   list-style: none;
   padding: 5px;
   border-top: 1px solid #fff;
-  transition: background-color 200ms ease-in;
 }
 
 .navbar li:last-child {
   border-bottom: 1px solid #fff;
 }
 
-.navbar li:hover {
-  background-color: rgba(33, 103, 61, .45);
-}
-
 .nav a {
   text-decoration: none;
   color: white;
   letter-spacing: .2rem;
+}
+
+.navbar a {
+  position: relative;
+}
+
+.navbar a::after {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  content: "";
+  background: #fff;
+  width: 100%;
+  height: 0px;
+  transform: scale(0);
+  transform-origin: center;
+  transition: transform 300ms ease-in-out,
+              height 300ms ease-in-out;
+}
+
+.navbar a:hover::after {
+  transform: scale(1);
+  height: 2px;
 }
 
 .material-icons {
@@ -176,6 +198,15 @@ img {
 @media (max-width: 599px){
   .tab-content {
     display: none;
+  }
+
+  .navbar li:last-child {
+    border-bottom: none;
+  }
+
+  .navbar a:hover::after {
+    height: 0;
+    transform: scale(0);
   }
 }
 
