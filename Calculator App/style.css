@@ -6,13 +6,15 @@ font-family: 'Montserrat', sans-serif;
 font-size: 24px;
 }
 
-body{
-  background-color: #000;
+h1 {
+  margin-top: 50px;
+  margin-left: 50px;
 }
 
 .container {
   width: 100%;
-  margin: 50px  auto;
+  margin: 80px  auto;
+  padding: 50px;
 }
 
 .calculator {
@@ -64,31 +66,16 @@ body{
   opacity: .5;
 }
 
-#operator,
-#input2,
-#total
- {
-  display: none;
+.oper:active {
+  background: orange; 
+}
+
+.hide {
+ display: none;
 }
 
 #a,
 #b,
 #c {
   opacity: 0;
-}
-
-@media (min-width: 550px) {
-  body {
-    background-color: inherit;
-  }
-
-  h1 {
-    font-size: 1.5em;
-    margin-top: 20px;
-    text-align: center;
-  }
-
-  .container {
-    padding: 2em;
-  }
 }
