@@ -16,8 +16,6 @@ body{
 }
 
 .calculator {
-  transform: scale(.7);
-
   margin: auto;
   width: 300px;
   padding: 15px 0;
@@ -67,8 +65,8 @@ body{
 }
 
 .color {
-   background: orange;
-
+   background: #fff;
+   color: #000;
 }
 
 @keyframes btnChange {
@@ -81,7 +79,7 @@ body{
 }
 
 .hide {
- /* display: none; */
+ display: none;
 }
 
 #a,

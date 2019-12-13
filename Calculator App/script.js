@@ -29,7 +29,6 @@ function calc(){
 
 // --- Number buttons ---
 $('button.num').click(function(){
-  colorRemove(this);
 
   if(inputOne.textContent != "" && operator.textContent != "" ){
 
@@ -81,13 +80,16 @@ $('button.oper').click(function(){
 
 // --- Equal button ---
 $('button.equal').click(function(){
+  let e = event.target;
+  e.classList.add('color');
+  setTimeout(function(){
+    e.classList.remove('color');
+  },200);
 
-     calc();
-     console.log(totalAmount);
-     totalCount.textContent = totalAmount;
-     display.textContent = totalAmount.toLocaleString();
-
-
+  calc();
+  console.log(totalAmount);
+  totalCount.textContent = totalAmount;
+  display.textContent = totalAmount.toLocaleString();
  });
 
 // ---- Clear button ----
@@ -100,19 +102,3 @@ $('button#clear').click(function(){
   $('#display').text("");
 
 });
-
-// ---- Button Effects ---
-/*
-$('button.oper').mousedown(function(){
-
-this.style.backgroundColor = "orange";
-
-});
-*/
-function btnColor(x){
- // x.style.backgroundColor = "orange";
-  // setTimeout(btnColor, 500);
-}
-function colorRemove(x){
- // x.style.backgroundColor = "#666";
-}
