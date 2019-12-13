@@ -61,15 +61,14 @@ body{
 
 }
 .btn:active {
-  opacity: 0.2;
+  opacity: .5;
 }
 
-.oper:active {
-  background: orange;
-}
-
-.hide {
- display: none;
+#operator,
+#input2,
+#total
+ {
+  display: none;
 }
 
 #a,
