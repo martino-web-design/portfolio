@@ -16,6 +16,8 @@ body{
 }
 
 .calculator {
+  transform: scale(.7);
+
   margin: auto;
   width: 300px;
   padding: 15px 0;
@@ -61,14 +63,25 @@ body{
 
 }
 .btn:active {
-  opacity: .5;
+  /* opacity: 0.2; */
 }
 
-#operator,
-#input2,
-#total
- {
-  display: none;
+.color {
+   background: orange;
+
+}
+
+@keyframes btnChange {
+  from {
+    background-color: orange;
+  }
+  to {
+    background-color: #666;
+  }
+}
+
+.hide {
+ /* display: none; */
 }
 
 #a,
