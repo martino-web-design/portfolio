@@ -29,6 +29,12 @@ function calc(){
 
 // --- Number buttons ---
 $('button.num').click(function(){
+   
+  let e = event.target;
+  e.classList.add('color');
+  setTimeout(function(){
+    e.classList.remove('color');
+  },200); 
 
   if(inputOne.textContent != "" && operator.textContent != "" ){
 
