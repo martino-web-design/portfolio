@@ -35,6 +35,10 @@ body{
   padding: 15px;
 }
 
+#clear {
+  grid-column: 4 / 5;
+}
+
 .input,
 .output {
   text-align: right;
@@ -58,15 +62,15 @@ body{
   border: 1px solid rgba(0,0,0,0.01);
   color: #fff;
   background-color: #666;
-
-}
-.btn:active {
-  /* opacity: 0.2; */
 }
 
 .color {
    background: #fff;
    color: #000;
+}
+
+.hide {
+ display: none;
 }
 
 @keyframes btnChange {
@@ -76,16 +80,6 @@ body{
   to {
     background-color: #666;
   }
-}
-
-.hide {
- display: none;
-}
-
-#a,
-#b,
-#c {
-  opacity: 0;
 }
 
 @media (min-width: 550px) {
