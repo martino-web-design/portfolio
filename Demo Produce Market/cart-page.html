@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martino's Produce Market</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body class="cart-bg text-white">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        <i class="material-icons hide-menu">clear</i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a id="home" class="navbar-brand" href="index.html">Martino's Produce Market</a>
+
+        <div class="navbar-nav">
+          <a class="nav-item nav-link cart-link" href="cart-page.html">Cart
+            <span>| </span><span id="units-cart-copy">0 units</span>
+            <i class="material-icons cart-icon">shopping_cart</i>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div class="container pt-2 pb-5 my-5">
+
+      <div class="product mt-md-5">
+
+        <div class="cart mb-5">
+          <h2 class="cart-title">Shopping Cart</h2>
+
+          <div id="show-cart">
+            <!--  shopping cart items here -->
+          </div>
+          <hr>
+                <!-- cart totals in spans below -->
+          <div class="cart-total">Cart Total: <span id="total-cart">0</span></div>
+          <div class="cart-count">Cart Count: <span id="units-cart">0</span></div>
+          <div class="cart-flex">
+            <button class="cart-btn-empty btn btn-outline-primary my-2 mx-md-2" id="clear-cart">Empty Cart</button>
+            <a role="button" class="btn btn-outline-primary cart-btn-shop my-2 ml-md-auto" href="index.html">Continue Shopping</a>
+            <a role="button" class="btn btn-primary cart-btn-out my-2 mx-md-2" href="checkout.html">Checkout</a>
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+
+    <footer class="fixed-bottom d-flex justify-content-center align-items-center text-white mt-4">
+      <span>&copy;2019 Martino's Produce Market</span>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="script.js"></script>
+
+  </body>
+</html>
