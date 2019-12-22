@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martino's Produce Market</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="grid-gallery.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body class="bg-dark text-white">
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <a id="home" class="navbar-brand d-none d-md-block" href="#">Martino's Produce Market</a>
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        <i class="material-icons hide-menu">clear</i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Produce
+            </a>
+            <div id="selectProduce" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a href="#produce" class="dropdown-item a">Fruit</a>
+              <a href="#produce" class="dropdown-item b">Vegetables</a>
+            </div>
+          </li>
+        </ul>
+        <input id="searchBar" class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link cart-link" href="cart-page.html">Cart
+            <span>| </span><span id="units-cart-copy">0 units</span>
+            <i class="material-icons cart-icon">shopping_cart</i>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container pt-2 mt-5">
+      <h1 class="text-center d-md-none py-4">Martino's Produce Market</h1>
+      <div class="gallery mt-md-5 mb-4">
+        <img src="img/potato.jpg" class="img img-1">
+        <img src="img/assorted-vegetables.jpg" class="img img-2">
+        <img src="img/orange.jpg" class="img img-3">
+        <img src="img/mixed-vegetables.jpg" class="img img-4">
+        <img src="img/carrots.jpg" class="img img-5">
+        <img src="img/cherry.jpg" class="img img-6">
+        <img src="img/green-bell-pepper.jpg" class="img img-7">
+        <img src="img/kiwi.jpg" class="img img-8">
+        <img src="img/peaches.jpg" class="img img-9">
+        <img src="img/peas.jpg" class="img img-10">
+        <img src="img/blueberry.jpg" class="img img-11">
+        <img src="img/apple.jpg" class="img img-12">
+      </div>
+
+      <h2 id="produce" class="my-2 mb-3">Produce</h2>
+
+      <h3 id="produceType" class="text-center my-2"></h3>
+
+      <div id="cards" class="row justify-content-center">
+       <!-- Produce cards here -->
+      </div>
+
+    </div> <!-- end container -->
+
+    <footer class="d-flex justify-content-center align-items-center text-white mt-4">
+      <span>&copy;2019 Martino's Produce Market</span>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+  <script type="text/javascript">
+  // --- Shopping items ---
+  const products = [
+    { type: 'fruit',
+      name: 'apples',
+      price: 0.69,
+      count: 1,
+      img: 'img/apple.jpg'
+    },
+    { type: 'fruit',
+      name: 'bananas',
+      price: 0.29,
+      count: 1,
+      img: 'img/banana.jpg'
+    },
+    { type: 'fruit',
+      name: 'blackberries',
+      price: 2.99,
+      count: 1,
+      img: 'img/blackberries.jpg',
+    },
+    { type: 'fruit',
+      name: 'blueberries',
+      price: 2.49,
+      count: 1,
+      img: 'img/blueberry.jpg',
+    },
+    { type: 'fruit',
+      name: 'cherries',
+      price: 3.99,
+      count: 1,
+      img: 'img/cherry.jpg',
+    },
+    { type: 'fruit',
+      name: 'green grapes',
+      price: 3.69,
+      count: 1,
+      img: 'img/green-grapes.jpg',
+    },
+    { type: 'fruit',
+      name: 'oranges',
+      price: 0.29,
+      count: 1,
+      img: 'img/orange.jpg',
+    },
+    { type: 'fruit',
+      name: 'red grapes',
+      price: 2.99,
+      count: 1,
+      img: 'img/purple-grapes.jpg',
+    },
+    { type: 'fruit',
+      name: 'strawberries',
+      price: 2.49,
+      count: 1,
+      img: 'img/strawberry.jpg',
+    },
+    { type: 'fruit',
+      name: 'kiwis',
+      price: 2.49,
+      count: 1,
+      img: 'img/kiwi.jpg',
+    },
+    { type: 'fruit',
+      name: 'lemons',
+      price: 1.49,
+      count: 1,
+      img: 'img/lemons.jpg',
+    },
+    { type: 'fruit',
+      name: 'limes',
+      price: 1.79,
+      count: 1,
+      img: 'img/limes.jpg',
+    },
+    { type: 'fruit',
+      name: 'peaches',
+      price: 2.79,
+      count: 1,
+      img: 'img/peaches.jpg',
+    },
+    { type: 'vegetable',
+      name: 'asparagus',
+      price: 3.99,
+      count: 1,
+      img: 'img/asparagus.jpg'
+    },
+    { type: 'vegetable',
+      name: 'carrots',
+      price: 0.69,
+      count: 1,
+      img: 'img/carrots.jpg'
+    },
+    { type: 'vegetable',
+      name: 'green bell peppers',
+      price: 3.29,
+      count: 1,
+      img: 'img/green-bell-pepper.jpg'
+    },
+    { type: 'vegetable',
+      name: 'green chilies',
+      price: 2.99,
+      count: 1,
+      img: 'img/green-pepper.jpg',
+    },
+    { type: 'vegetable',
+      name: 'kale',
+      price: 2.49,
+      count: 1,
+      img: 'img/kale.jpg',
+    },
+    { type: 'vegetable',
+      name: 'lettuce',
+      price: 1.99,
+      count: 1,
+      img: 'img/lettuce.jpg',
+    },
+    { type: 'vegetable',
+      name: 'peas',
+      price: 2.69,
+      count: 1,
+      img: 'img/peas.jpg',
+    },
+    { type: 'vegetable',
+      name: 'potatoes',
+      price: 2.29,
+      count: 1,
+      img: 'img/potato.jpg',
+    },
+    { type: 'vegetable',
+      name: 'red chilies',
+      price: 2.99,
+      count: 1,
+      img: 'img/red-chili.jpg',
+    },
+    { type: 'vegetable',
+      name: 'red onions',
+      price: 1.49,
+      count: 1,
+      img: 'img/red-onions.jpg',
+    },
+    { type: 'vegetable',
+      name: 'red peppers',
+      price: 2.99,
+      count: 1,
+      img: 'img/red-pepper.jpg',
+    },
+    { type: 'vegetable',
+      name: 'zucchini',
+      price: 2.49,
+      count: 1,
+      img: 'img/zuccini.jpg',
+    },
+    { type: 'vegetable',
+      name: 'tomatoes',
+      price: 1.49,
+      count: 1,
+      img: 'img/tomatoes.jpg',
+    },
+  ];
+
+  // --- Create each produce item card ---
+  const cards = document.querySelector('#cards');
+
+  for(i=0; i < products.length; i++){
+
+    const newCard = document.createElement('div');
+    newCard.className ='product-card';
+    newCard.setAttribute('data-type', products[i].type);
+
+    const newImgDiv = document.createElement('div');
+    newImgDiv.style.overflow = "hidden";
+    newImgDiv.className = 'product-div mb-2';
+
+
+    const newImg = document.createElement('img');
+    newImg.className ='product-image';
+    newImg.src = products[i].img;
+    newImg.setAttribute('alt', products[i].name.toUpperCase());
+
+    const newPara1 = document.createElement('p');
+    newPara1.setAttribute('data-name', products[i].name);
+    newPara1.className ='product-info text-center';
+    newPara1.textContent = products[i].name.toUpperCase();
+
+    const newPara2 = document.createElement('p');
+    newPara2.setAttribute('data-price', products[i].price);
+    newPara2.className ='product-info';
+    newPara2.textContent = "Cost: $" + products[i].price;
+
+    const newBtn = document.createElement('button');
+    newBtn.className = 'add-to-cart btn-modal btn btn-outline-light';
+    newBtn.textContent = "Add";
+    newBtn.setAttribute('data-name', products[i].name);
+    newBtn.setAttribute('data-price', products[i].price);
+    newBtn.setAttribute('type','button');
+
+
+    newImgDiv.appendChild(newImg);
+    newCard.appendChild(newImgDiv);
+    newCard.appendChild(newPara1);
+    newCard.appendChild(newPara2);
+    newCard.appendChild(newBtn);
+    cards.appendChild(newCard);
+  }
+  // end create items
+
+  // --- Search Bar ---
+  const search = document.querySelector('#searchBar');
+
+  search.addEventListener('keyup', function(e){
+    const targetElem = document.querySelector('#produce');
+    targetElem.scrollIntoView({behavior:"smooth"});
+
+    const type = document.querySelector('#produceType').textContent = "";
+    const searchInput = e.target.value.toLowerCase();
+    const searchLi = cards.querySelectorAll('.product-card');
+
+    searchLi.forEach(function(item){
+      const p = item.querySelector('p').textContent.toLowerCase();
+
+      if(p.indexOf(searchInput)!= -1){
+        item.style.display = "";
+      }
+      else {
+        item.style.display = "none";
+      }
+    });
+  }); // end search
+
+// Home select
+const home = document.querySelector('#home');
+
+home.addEventListener('click', function(){
+  const li = cards.querySelectorAll('.product-card');
+  li.forEach(function(item){
+  item.style.display = "";
+  const type = document.querySelector('#produceType').textContent = "";
+  });
+});
+
+// --- Select produce type from dropdown ---
+const sel = document.querySelector('#selectProduce');
+
+sel.addEventListener('click', function(e){
+  const li = cards.querySelectorAll('.product-card');
+
+  if(e.target.textContent == "Fruit"){
+    li.forEach(function(item){
+      if(item.getAttribute('data-type') == "fruit"){
+        item.style.display = "";
+        const type = document.querySelector('#produceType').textContent = "Fruit";
+      }
+      else {
+        item.style.display = "none";
+      }
+    });
+  }
+  else {
+    li.forEach(function(item){
+      if(item.getAttribute('data-type') == "vegetable"){
+        item.style.display = "";
+        const type = document.querySelector('#produceType').textContent = "Vegetables";
+      }
+      else {
+        item.style.display = "none";
+      }
+    });
+  }
+});
+ // end Select
+
+    </script>
+
+    <script src="script.js"></script>
+
+  </body>
+</html>
