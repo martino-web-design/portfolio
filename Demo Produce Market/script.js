@@ -14,7 +14,7 @@ btn.addEventListener('click', function(){
 
 // -------- Shopping Cart ----------
 // Cart array
-let cart = [];
+var cart = [];
 // Cart items
 var Item = function(name, price, count){
   this.name = name;
