@@ -1,4 +1,3 @@
-
 // Cart array
 var cart = [];
 
@@ -23,7 +22,6 @@ $('.add-to-cart').click(function(){
   var name = e.getAttribute('data-name');
   var price = e.getAttribute('data-price');
   addItemToCart(name, price, 1);
-  // saveCart();
   displayCart();
 
   e.classList.add('show');
@@ -102,12 +100,7 @@ function displayCart(){
 }; // ---  end Display function ------
 
 // ----- Shopping Cart base functions -----
-function pushCart(x){
-  cart.push(x);
-}
-
 function addItemToCart(name, price, count){
-  console.log("added", cart)
   for(var i in cart){
     if(cart[i].name === name){
       cart[i].count += count;
@@ -116,8 +109,7 @@ function addItemToCart(name, price, count){
     }
   }
   var item = new Item(name, price, count);
-  console.log("item",item)
-  pushCart(item);
+  cart.push(item);
   saveCart();
 };
 
@@ -181,11 +173,9 @@ function cartTotalCost(){
 
 // Save cart to local storage
 function saveCart(){
-
   if(cart===null){
     cart=[];
     localStorage.setItem("shoppingCart", JSON.stringify(cart));
-    console.log("empty", cart);
   }
   else {
     localStorage.setItem("shoppingCart", JSON.stringify(cart));
@@ -197,9 +187,6 @@ function loadCart(){
   cart = JSON.parse(localStorage.getItem("shoppingCart"));
   displayCart();
 }
-
-// loadCart(); // loads cart from local storage
-// displayCart(); // displays the cart after loading
 // --------- end cart app ---------
 
 // ---- Toggle navigation menu button icon
