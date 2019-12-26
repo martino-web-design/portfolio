@@ -37,7 +37,7 @@ $('.add-to-cart').click(function(){
   var name = e.getAttribute('data-name');
   var price = e.getAttribute('data-price');
   addItemToCart(name, price, 1);
-  saveCart();
+//   saveCart();
   displayCart();
 
   e.classList.add('show');
