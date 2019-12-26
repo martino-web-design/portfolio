@@ -9,6 +9,22 @@ else{
   console.log("cart not null", cart)
 }
 
+function addItemToCart(name, price, count){
+  console.log("added", cart)
+  for(var i in cart){
+    if(cart[i].name === name){
+      cart[i].count += count;
+      saveCart();
+      return;
+    }
+  }
+  var item = new Item(name, price, count);
+  console.log("item",item)
+  cart.push(item);
+  saveCart();
+};
+
+
 }); // end doc ready
 // var timer = setTimeout(loadCart,500);
 
@@ -108,18 +124,6 @@ function displayCart(){
 
 // ----- Shopping Cart base functions -----
 
-function addItemToCart(name, price, count){
-  for(var i in cart){
-    if(cart[i].name === name){
-      cart[i].count += count;
-      saveCart();
-      return;
-    }
-  }
-  var item = new Item(name, price, count);
-  cart.push(item);
-  saveCart();
-};
 
 // Remove 1 unit of an item from cart
 function removeItemFromCart(name, price, count){
