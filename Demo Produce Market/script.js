@@ -1,4 +1,12 @@
+
+// Cart array
+var cart = [];
+console.log(cart)
+
 $(function(){
+  // saveCart();
+  loadCart();
+/*
 if(cart === null){
 saveCart();
 loadCart();
@@ -8,14 +16,12 @@ else{
   loadCart();
   console.log("cart not null", cart)
 }
-
+*/
 }); // end doc ready
 // var timer = setTimeout(loadCart,500);
 
 // -------- Shopping Cart ----------
-// Cart array
-var cart = [];
-console.log(cart)
+
 // Cart items
 var Item = function(name, price, count){
   this.name = name;
