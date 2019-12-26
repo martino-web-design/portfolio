@@ -14,7 +14,7 @@ btn.addEventListener('click', function(){
 
 // -------- Shopping Cart ----------
 // Cart array
-var cart = [{type: "gooseberry"}];
+var cart = [{name: "gooseberry", price: 3.99, count: 1}];
   console.log("cart", cart);
 // Cart items
 var Item = function(name, price, count){
@@ -117,7 +117,7 @@ function addItemToCart(name, price, count){
     }
   }
   var item = new Item(name, price, count);
-  cart.append(item);
+  cart.push(item);
   saveCart();
 };
 
