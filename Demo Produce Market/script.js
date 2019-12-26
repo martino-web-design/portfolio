@@ -1,5 +1,8 @@
-$(document).ready(function(){
-  
+$(function(){
+loadCart();
+}); // end doc ready
+// var timer = setTimeout(loadCart,500);
+
 // -------- Shopping Cart ----------
 // Cart array
 var cart = [];
@@ -177,8 +180,8 @@ function loadCart(){
   displayCart();
 }
 
-loadCart(); // loads cart from local storage
-// displays the cart after loading
+// loadCart(); // loads cart from local storage
+// displayCart(); // displays the cart after loading
 // --------- end cart app ---------
 
 // ---- Toggle navigation menu button icon
@@ -186,5 +189,3 @@ $('.navbar-toggler').click(function(){
   $('.navbar-toggler-icon').toggle();
   $('.hide-menu').toggle();
 });
-
-}); // end doc ready  
