@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+// saveCart();
 // --- Mobile click effects
 /*
 btn.addEventListener('click', function(){
@@ -14,8 +14,8 @@ btn.addEventListener('click', function(){
 
 // -------- Shopping Cart ----------
 // Cart array
-var cart = [{name: "gooseberry", price: 3.99, count: 1}];
-  console.log("cart", cart);
+var cart = [];
+console.log(cart)
 // Cart items
 var Item = function(name, price, count){
   this.name = name;
@@ -30,7 +30,7 @@ $('.add-to-cart').click(function(){
   var price = e.getAttribute('data-price');
   addItemToCart(name, price, 1);
   displayCart();
-  
+
   e.classList.add('show');
   setTimeout(function(){
     e.classList.remove('show');
@@ -185,7 +185,9 @@ function saveCart(){
 
 // Load cart
 function loadCart(){
+  if (cart != null || cart != undefined){
   cart = JSON.parse(localStorage.getItem("shoppingCart"));
+  }
 }
 
 loadCart(); // loads cart from local storage
