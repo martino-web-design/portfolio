@@ -1,5 +1,7 @@
 $(document).ready(function(){
-// saveCart();
+  
+ loadCart();
+}); // end doc ready  
 // --- Mobile click effects
 /*
 btn.addEventListener('click', function(){
@@ -190,7 +192,7 @@ function loadCart(){
   }
 }
 
-loadCart(); // loads cart from local storage
+//loadCart(); // loads cart from local storage
 displayCart(); // displays the cart after loading
 // --------- end cart app ---------
 
@@ -200,4 +202,4 @@ $('.navbar-toggler').click(function(){
   $('.hide-menu').toggle();
 });
 
-}); // end doc ready
+
