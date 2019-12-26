@@ -3,7 +3,9 @@
 var cart = [];
 console.log(cart)
 
+
 $(function(){
+  localStorage.setItem("shoppingCart", JSON.stringify(cart));
   // saveCart();
   loadCart();
 /*
