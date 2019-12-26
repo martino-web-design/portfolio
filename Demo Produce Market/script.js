@@ -14,7 +14,7 @@ btn.addEventListener('click', function(){
 
 // -------- Shopping Cart ----------
 // Cart array
-var cart = [];
+var cart = [{type: "gooseberry"}];
   console.log("cart", cart);
 // Cart items
 var Item = function(name, price, count){
