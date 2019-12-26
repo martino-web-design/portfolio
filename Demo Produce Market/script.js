@@ -1,6 +1,9 @@
 $(function(){
+loadCart();
+if(cart === null){
 saveCart();
-loadCart();  
+}
+
 }); // end doc ready
 // var timer = setTimeout(loadCart,500);
 
@@ -181,7 +184,7 @@ function loadCart(){
   displayCart();
 }
 
-//loadCart(); // loads cart from local storage
+// loadCart(); // loads cart from local storage
 // displayCart(); // displays the cart after loading
 // --------- end cart app ---------
 
