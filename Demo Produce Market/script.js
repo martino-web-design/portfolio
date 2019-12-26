@@ -1,19 +1,5 @@
 $(document).ready(function(){
   
- loadCart();
-}); // end doc ready  
-// --- Mobile click effects
-/*
-btn.addEventListener('click', function(){
-
-  .classList.add('btn-click')
-
-  setTimeout(function(){
-    .classList.remove('btn-click');
-  },300);
-});
-*/
-
 // -------- Shopping Cart ----------
 // Cart array
 var cart = [];
@@ -187,13 +173,12 @@ function saveCart(){
 
 // Load cart
 function loadCart(){
-  if (cart != null || cart != undefined){
   cart = JSON.parse(localStorage.getItem("shoppingCart"));
-  }
+  displayCart();
 }
 
-//loadCart(); // loads cart from local storage
-displayCart(); // displays the cart after loading
+loadCart(); // loads cart from local storage
+// displays the cart after loading
 // --------- end cart app ---------
 
 // ---- Toggle navigation menu button icon
@@ -202,4 +187,4 @@ $('.navbar-toggler').click(function(){
   $('.hide-menu').toggle();
 });
 
-
+}); // end doc ready  
