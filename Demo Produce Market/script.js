@@ -1,6 +1,8 @@
 $(function(){
 loadCart();
+console.log("cart not null");  
 if(cart === null){
+  console.log("cart was null so saved");
 saveCart();
 }
 
