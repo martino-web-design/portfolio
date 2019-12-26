@@ -117,7 +117,7 @@ function addItemToCart(name, price, count){
     }
   }
   var item = new Item(name, price, count);
-  cart.push(item);
+  cart.append(item);
   saveCart();
 };
 
