@@ -1,26 +1,12 @@
 
 // Cart array
 var cart = [];
-console.log(cart)
 
-
+// Doc ready func- loads cart from local storage
 $(function(){
-//   localStorage.setItem("shoppingCart", JSON.stringify(cart));
-  // saveCart();
   loadCart();
-/*
-if(cart === null){
-saveCart();
-loadCart();
-console.log("cart was null", cart)
-}
-else{
-  loadCart();
-  console.log("cart not null", cart)
-}
-*/
+  saveCart();
 }); // end doc ready
-// var timer = setTimeout(loadCart,500);
 
 // -------- Shopping Cart ----------
 
@@ -37,7 +23,7 @@ $('.add-to-cart').click(function(){
   var name = e.getAttribute('data-name');
   var price = e.getAttribute('data-price');
   addItemToCart(name, price, 1);
-//   saveCart();
+  // saveCart();
   displayCart();
 
   e.classList.add('show');
@@ -116,6 +102,10 @@ function displayCart(){
 }; // ---  end Display function ------
 
 // ----- Shopping Cart base functions -----
+function pushCart(x){
+  cart.push(x);
+}
+
 function addItemToCart(name, price, count){
   console.log("added", cart)
   for(var i in cart){
@@ -127,7 +117,7 @@ function addItemToCart(name, price, count){
   }
   var item = new Item(name, price, count);
   console.log("item",item)
-  cart.push(item);
+  pushCart(item);
   saveCart();
 };
 
@@ -191,7 +181,15 @@ function cartTotalCost(){
 
 // Save cart to local storage
 function saveCart(){
-  localStorage.setItem("shoppingCart", JSON.stringify(cart));
+
+  if(cart===null){
+    cart=[];
+    localStorage.setItem("shoppingCart", JSON.stringify(cart));
+    console.log("empty", cart);
+  }
+  else {
+    localStorage.setItem("shoppingCart", JSON.stringify(cart));
+  }
 }
 
 // Load cart
