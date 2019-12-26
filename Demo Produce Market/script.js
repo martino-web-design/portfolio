@@ -9,22 +9,6 @@ else{
   console.log("cart not null", cart)
 }
 
-function addItemToCart(name, price, count){
-  console.log("added", cart)
-  for(var i in cart){
-    if(cart[i].name === name){
-      cart[i].count += count;
-      saveCart();
-      return;
-    }
-  }
-  var item = new Item(name, price, count);
-  console.log("item",item)
-  cart.push(item);
-  saveCart();
-};
-
-
 }); // end doc ready
 // var timer = setTimeout(loadCart,500);
 
@@ -45,6 +29,7 @@ $('.add-to-cart').click(function(){
   var name = e.getAttribute('data-name');
   var price = e.getAttribute('data-price');
   addItemToCart(name, price, 1);
+  saveCart();
   displayCart();
 
   e.classList.add('show');
@@ -123,6 +108,20 @@ function displayCart(){
 }; // ---  end Display function ------
 
 // ----- Shopping Cart base functions -----
+function addItemToCart(name, price, count){
+  console.log("added", cart)
+  for(var i in cart){
+    if(cart[i].name === name){
+      cart[i].count += count;
+      saveCart();
+      return;
+    }
+  }
+  var item = new Item(name, price, count);
+  console.log("item",item)
+  cart.push(item);
+  saveCart();
+};
 
 
 // Remove 1 unit of an item from cart
