@@ -1,9 +1,12 @@
 $(function(){
-loadCart();
-console.log("cart not null");  
 if(cart === null){
-  console.log("cart was null so saved");
 saveCart();
+loadCart();
+console.log("cart was null", cart)
+}
+else{
+  loadCart();
+  console.log("cart not null", cart)
 }
 
 }); // end doc ready
