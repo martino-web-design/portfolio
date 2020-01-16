@@ -1,0 +1,266 @@
+body {
+background-color: #000;
+color: #fff;
+font-family: 'Montserrat', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+p {
+  margin: 5px 0;
+}
+
+nav,
+.search-icon {
+  margin-bottom: 15px;
+}
+
+button {
+  margin: 15px auto 0;
+  flex: 0 1 30%;
+}
+
+input {
+  font-size: 16px;
+}
+
+#searchIcon {
+  cursor: pointer;
+  padding: 0 5px;
+  align-self: center;
+}
+
+.curr-img {
+  height: 175px;
+  padding: 10px 0;
+}
+
+.temp-div img {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+  object-position: center;
+  padding: 5px 0;
+  box-sizing: unset;
+}
+
+.font-m {
+  font-size: 24px;
+}
+
+.font-sc {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  color: #999;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto 30px;
+}
+
+.wrapper {
+  margin: 25px 0;
+}
+
+#searchDiv input
+{
+  flex: 1 1 50%;
+}
+
+#searchDiv div {
+  flex: 0 1 30%;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hide {
+  display: none;
+}
+
+.fade {
+  opacity: .5;
+}
+
+.farh,
+.cels {
+  padding: 0 10px;
+}
+.curr-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ----  Feels/Wind/Cond/Hum-- */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  max-width: 100%;
+  grid-template-areas:
+                        "area-a area-a"
+                        "area-b area-b"
+                        "area-c area-d"
+                        "area-c area-d"
+                        "area-c area-d"
+                        "area-c area-d";
+}
+
+.flex-a {
+  grid-area: area-a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-b {
+  grid-area: area-b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-c {
+  grid-area: area-c;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-d {
+  grid-area: area-d;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-c p,
+.flex-d p {
+  align-self: flex-start;
+  margin-left: 20%;
+}
+/*  ----- end grid ---- */
+
+#w_temp {
+  font-size: 65px;
+}
+
+#f_temp {
+  display: flex;
+  width: 4000px;
+  padding: 5px;
+}
+
+.temp-div {
+  flex: auto;
+  text-align: center;
+}
+
+#tempConv {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.wrapper {
+  width: 100%;
+  overflow: scroll;
+}
+
+.center,
+.current {
+  text-align: center;
+}
+
+#searchToggle {
+  cursor: pointer;
+}
+
+/* -- High/Low -- grid */
+.grid-range {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:  "....  max   min";
+  text-align: center;
+}
+
+.max {
+  grid-area: max;
+}
+
+.min {
+  grid-area: min;
+}
+
+/* --- High/low range grid --- */
+.range-div p:first-of-type {
+  text-transform: uppercase;
+  color: #999;
+  text-align: left;
+  padding-left: 20px;
+}
+
+#f_range {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  max-width: 100%;
+  grid-template-areas:
+                        "col-1 col-1 col-1"
+                        "col-2 col-2 col-2"
+                        "col-3 col-3 col-3"
+                        "col-4 col-4 col-4"
+                        "col-5 col-5 col-5"
+                        "col-6 col-6 col-6"
+                        "col-7 col-7 col-7";
+
+}
+
+.range-div,
+.maxmin-div {
+  display: flex;
+  text-align: center;
+}
+
+.range-div p,
+.max,
+.min {
+  flex: 30%;
+}
+
+.range-div:first-of-type {
+  grid-area: col-1;
+}
+.range-div:nth-of-type(2) {
+  grid-area: col-2;
+}
+.range-div:nth-of-type(3) {
+  grid-area: col-3;
+}
+
+.range-div:nth-of-type(4){
+  grid-area: col-4;
+}
+.range-div:nth-of-type(5) {
+  grid-area: col-5;
+}
+.range-div:nth-of-type(6) {
+  grid-area: col-6;
+}
+
+.range-div:nth-of-type(7){
+  grid-area: col-7;
+}
