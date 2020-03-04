@@ -1,7 +1,16 @@
 
 body {
   font-family: 'Open Sans';
-  background-color: hsla(180, 38%, 80%, 0.2);
+  background-color: #D2C29D;
+}
+
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .nav-link.active {
+  color: #615550;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #D2C29D;
 }
 
 img {
@@ -15,6 +24,10 @@ h1 {
   color: #fff;
 }
 
+h2, h3 {
+  color: #615550;
+}
+
 h3 {
   font-family: 'Alegreya';
 }
@@ -24,7 +37,12 @@ p {
 }
 
 footer {
-  background-color: hsla(180, 38%, 30%, 0.5);
+  height: 75px;
+  background-color: #615550;
+  color: #F0EAD6;
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
 }
 
 .navbar-toggler {
@@ -43,13 +61,13 @@ footer {
   width: 100%;
   height: 0px;
   transform: scale(0);
-  background: hsla(180, 38%, 30%, 0.5);
+  background: #D2C29D;
   transition: transform 300ms ease-in,
               height 300ms ease-in;
 }
 
-.navbar-light .navbar-nav .nav-link.active {
-  color: hsla(180, 38%, 30%, 0.5);
+.bg-light {
+  background-color: #F0EAD6 !important;
 }
 
 .jumbotron {
@@ -61,13 +79,13 @@ footer {
 }
 
 .header-p {
-  color: #fff;
+  color: #F0EAD6;
   font-size: 1.25rem;
   text-shadow: 2px 2px 5px #000;
 }
 
-.content-h1 {
-  color: hsla(180, 38%, 30%, 0.8);
+.content-h1, h1 {
+  color: #615550;
 }
 
 .photo-image {
@@ -86,7 +104,7 @@ footer {
 
 /* Jquery header message */
 #flashMessage {
-  color: #fff;
+  color: #F0EAD6;
   font-size: 35px;
   padding-top: 30px;
   text-shadow: 3px 3px 5px #000;
@@ -111,6 +129,11 @@ footer {
  p {
     font-size: 14px;
  }
+
+ .nav-thumb {
+   width: 35px;
+   height: 35px;
+ }
 }
 
 @media  (max-width: 575.9px) and (orientation: landscape) {
@@ -132,7 +155,7 @@ footer {
     max-height: 60vh;
   }
 
-  .nav-item:hover::after {
+  .nav-item.active::after {
     transform: scale(1);
     height: 2px;
   }
