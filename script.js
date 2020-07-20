@@ -2,11 +2,13 @@
 
  $(document).ready(function(){
    //--- Smooth Scrolling to link section ---
+   if(window.innerWidth > 768) {
     var scrollLink = $('.smooth'); // css class add to link tags
     scrollLink.click(function(e){
       e.preventDefault();
-      $('body,html').animate({scrollTop: $(this.hash).offset().top-75}, 1000)
+      $('body,html').animate({scrollTop: $(this.hash).offset().top-75}, 1200)
      });
+   }
 
   $(window).scroll(function(){
     //--- Nav menu add box shadow on scroll ---
@@ -40,5 +42,5 @@
   $('#home').click(function(){
    $('.nav-item').removeClass('active');
   });
-  
+
 });//end of JQuery doc ready

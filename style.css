@@ -48,11 +48,6 @@ footer {
   margin: auto;
 }
 
-.jumbotron h1,
-.jumbotron h2 {
-  text-shadow: 5px 5px 10px #777;
-}
-
 .jumbotron {
   display: flex;
   align-items: center;
