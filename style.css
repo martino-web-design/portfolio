@@ -56,6 +56,12 @@ footer {
   background-position: center;
   background-color: var(--dark);
   height: 100vh;
+  position: fixed;
+  z-index: -500;
+}
+
+.spacer {
+  height: 100vh
 }
 
 .jumbotron h2 {
@@ -103,12 +109,13 @@ footer {
   padding-bottom: .5rem;
 }
 
-
-
 .btn {
-
 border-radius: 20px;
 font-family: 'Roboto Mono', monospace;
+}
+
+.portfolio  {
+  background-color: #fff;
 }
 
 .skills {

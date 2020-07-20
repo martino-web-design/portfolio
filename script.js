@@ -2,13 +2,12 @@
 
  $(document).ready(function(){
    //--- Smooth Scrolling to link section ---
-   if(window.innerWidth > 768) {
-    var scrollLink = $('.smooth'); // css class add to link tags
-    scrollLink.click(function(e){
-      e.preventDefault();
-      $('body,html').animate({scrollTop: $(this.hash).offset().top-75}, 1200)
-     });
-   }
+   var scrollLink = $('.smooth'); // css class add to link tags
+
+   scrollLink.click(function(e){
+    e.preventDefault();
+    $('body,html').animate({scrollTop: $(this.hash).offset().top-75}, 1200)
+   });
 
   $(window).scroll(function(){
     //--- Nav menu add box shadow on scroll ---
@@ -42,5 +41,11 @@
   $('#home').click(function(){
    $('.nav-item').removeClass('active');
   });
+
+  // --- Add Jumbo Parallax Effect
+  document.addEventListener('scroll', addScrollListener);
+  function addScrollListener(){
+    hero_logo.style.top = -(window.pageYOffset / 2) + 'px';
+  }
 
 });//end of JQuery doc ready
