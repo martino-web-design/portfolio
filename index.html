@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <meta name="description" content="Brian Martino, San Francisco Bay Area web developer/designer working with HTML, CSS and JavaScript. Visit my portfolio website @ martinowebdesign. I'm a new developer looking for opportunites to use my talents and learn more along the way.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="description" content="Brian Martino, San Francisco Bay Area web developer/designer working with HTML, CSS and JavaScript. Visit my portfolio website @ martinowebdesign. I'm a new developer looking for opportunites to use my talents and learn more along the way." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Portfolio | Brian Martino</title>
-    <link rel="icon" type="image/png" href="img/favicon-32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="img/favicon.png" sizes="192x192">
-    <link rel="apple-touch-icon" type="image/png" href="img/favicon-180.png">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Mono|Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/favicon-32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="img/favicon-192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" type="image/png" href="img/favicon-180.png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Mono|Montserrat&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <header>
       <nav class="navbar navbar-expand-sm navbar-light bg-white fixed-top">
         <a class="navbar-brand" href="#top">
-          <img src="img/florencecoffeeThumb.jpg" class="thumb" alt="Portfolio thumbnail photo, Brian Martino">
+          <img src="img/florencecoffeeThumb.jpg" class="thumb" alt="Portfolio thumbnail photo, Brian Martino" />
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -38,170 +38,253 @@
       </nav>
     </header>
 
-<!-- Jumbotron below -->
+    <!-- Jumbotron below -->
     <div id="hero_logo" class="jumbotron jumbotron-fluid border-bottom border-white mb-0">
-      <div class="container jumbo-container">
-        <div class="row bg-light">
+      <div class="jumbo-container">
+        <div class="row">
           <div class="col p-4">
-            <img class="bracket" src="img/o-brkt.svg" alt="graphic of open/close brackets">
-            <h1  class="d-inline display-4 p-sm-4">Brian&nbsp;Martino</h1>
-            <h2 class="d-inline  pr-4 pt-4">Front End Web&nbsp;Developer</h2>
-            <img class="bracket" src="img/c-brkt.svg" alt="graphic of open/close brackets">
-            <hr class="my-4">
-            <p class="help">How can I help with your next project?</p>
-            <a class="btn btn-primary btn-lg text-white" href="#contact" role="button">Contact Me!</a>
+            <h1 class="display-4 p-sm-3 text-white">Brian&nbsp;Martino</h1>
+            <h2 class="pt-4 pb-4">Front&nbsp;End Web&nbsp;Developer</h2>
+            <img class="pb-sm-3 brkt-icon" src="img/c-brkt.svg" />
           </div>
         </div>
       </div>
     </div>
-<!-- Use spacer class as margin between Jumbo and Portfolio allowing 'parallax' -->
+
+    <!-- Use spacer class as margin between Jumbo and Portfolio allowing 'parallax' -->
     <div class="spacer"></div>
 
-<!-- Portfolio -->
-<div class="portfolio py-4">
-    <div class="container">
-      <h2 id="projects" class="p-4">Projects</h2>
-      <div class="row mx-sm-5 mx-md-0">
+    <!-- Projects -->
+    <div class="portfolio pb-4">
+      <h2 id="projects" class="p-4 mb-4 mb-sm-5 bg-dark text-light">Projects</h2>
+      <div class="container">
+        <!-- <h2 id="projects" class="p-4 text-light">Projects</h2> -->
 
-        <div class="col-12 col-md-6 col-xl-4">
-          <div class="overlay">
-            <h3 class="title">Demo Landscape Site</h3>
-            <p>Here's a demo WordPress project created with custom theme development, CSS and JavaScript. </p>
-            <a class="btn btn-light" role="button" href="https://brianm.sgedu.site" target="_blank">Check it Out</a>
-            <img class="bracket" src="img/c-brkt.svg" alt="graphic of open/close brackets">
+        <div class="row">
+          <!-- E-commerce project -->
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="overlay item">
+              <img src="./img/market.jpg" alt="" class="img-tint" />
+              <div class="img-overlay">E-commerce Site</div>
+              <div class="overlay-1">
+                <h3 class="title">Demo E-commerce Site</h3>
+                <p>A prototype website created with JavaScript, Bootstrap and jQuery.</p>
+                <a class="" role="button" href="https://martinowebdesign.com/Demo Produce Market/index.html" target="_blank">
+                  <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Handyman site -->
+          <div class="col-12 col-md-6 col-xl-4 flex">
+            <div class="overlay item">
+              <img src="./img/royal.jpg" alt="" class="img-tint" />
+              <div class="img-overlay">Professional Handyman</div>
+              <div class="overlay-1">
+                <h3 class="title">Royal Handyman & Maintenance Services</h3>
+                <p>A professional website created for a client using Bootstrap, jQuery and JavaScript.</p>
+                <a class="" role="button" href="https://royalhandymanhawaii.com" target="_blank">
+                  <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Travel blog -->
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="overlay item">
+              <img src="./img/travels.jpg" alt="" class="img-tint" />
+              <div class="img-overlay">Travel Blog</div>
+              <div class="overlay-1">
+                <h3 class="title">Demo Travel Blog</h3>
+                <p>This is a prototype website created with Bootstrap and a splash of jQuery.</p>
+                <a class="" role="button" href="https://martinowebdesign.com/Demo Travel Blog/index.html" target="_blank">
+                  <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Guitar tuner -->
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="overlay item">
+              <img src="./img/guitar.png" alt="" class="img-tint" />
+              <div class="img-overlay">Guitar Tuner</div>
+              <div class="overlay-1">
+                <h3 class="title">Guitar Tuner</h3>
+                <p>A guitar tuner app using JavaScript, jQuery and audio files to create a variety of guitar tuning selections.</p>
+                <a class="" role="button" href="https://martinowebdesign.com/Guitar Tuner App/index.html" target="_blank">
+                  <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Measurement app -->
+          <div class="up col-12 col-md-6 col-xl-4">
+            <div class="overlay item">
+              <img src="./img/measure.png" alt="" class="image img-tint" />
+              <div class="img-overlay">Measurement Conversions</div>
+              <div class="overlay-1">
+                <h3 class="title">Measurement Conversions</h3>
+                <p>A measurement conversion app using JavaScript, jQuery and Vue.</p>
+                <a class="" role="button" href="https://martinowebdesign.com/Conversion App/index.html" target="_blank">
+                  <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Color picker -->
+          <div class="up col-12 col-md-6 col-xl-4">
+            <div class="overlay item">
+              <img src="./img/color.png" alt="" class="img-tint" />
+              <div class="img-overlay">Color Picker</div>
+              <div class="overlay-1">
+                <h3 class="title">Color Picker</h3>
+                <p>A color picker app using Vanilla JavaScript, allowing users to create custom colors using either RGB or HSL color formats.</p>
+                <a class="" role="button" href="https://martinowebdesign.com/Color Picker App/index.html" target="_blank">
+                  <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Weather app -->
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="overlay item">
+              <img src="./img/weather-app.png" alt="" class="img-tint" />
+              <div class="img-overlay">Weather App</div>
+              <div class="overlay-1">
+                <h3 class="title">Weather App</h3>
+                <p>A weather app using data from the OpenWeatherMap API. Created with jQuery, JavaScript and custom weather icons.</p>
+                <a class="" role="button" href="https://martinowebdesign.com/Weather App/index.html" target="_blank">
+                  <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Painter project -->
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="overlay item">
+              <img src="./img/painters.jpg" alt="" class="img-tint" />
+              <div class="img-overlay">Design Prototype</div>
+              <div class="overlay-1">
+                <h3 class="title">Yellowstone Painters</h3>
+                <p>Here's a design prototype created with Adobe XD. Check out the current developmental site below or the design mockup <a style="color: #cccccc; text-transform: lowercase" href="https://xd.adobe.com/view/60058934-b625-40e8-7cd7-2b6cdf996ff9-1634/?hints=off" target="_blank">here</a>.</p>
+                <a class="" role="button" href="https://martino-web-design.github.io/painters/" target="_blank">
+                  <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Trivia app -->
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="overlay item">
+              <img src="./img/trivia.jpg" alt="" class="img-tint" />
+              <div class="img-overlay">Trivia Game</div>
+              <div class="overlay-1">
+                <h3 class="title">Famous Landmarks Trivia</h3>
+                <p>A trivia card game created with the JavaScript framework Vue.</p>
+                <a class="" role="button" href="https://martinowebdesign.com/Trivia Game/index.html" target="_blank">
+                  <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- TicTacToe game -->
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="overlay item">
+              <img src="./img/tic-tac.png" alt="" class="img-tint" />
+              <div class="img-overlay">Tic-Tac-Toe Game</div>
+              <div class="overlay-1">
+                <h3 class="title">Tic Tac Toe</h3>
+                <p>An interactive Tic Tac Toe game built with JavaScript and jQuery.</p>
+                <a class="" role="button" href="https://martinowebdesign.com/TicTacToe Game/index.html" target="_blank">
+                  <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Image gallery -->
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="overlay item">
+              <img src="./img/image-gallery.jpg" alt="" class="img-tint" />
+              <div class="img-overlay">Image Gallery</div>
+              <div class="overlay-1">
+                <h3 class="title">Image Gallery</h3>
+                <p>A simple React app to search for free stock images hosted on Pixabay. I used Create React App, Material-UI and Pixabay API for this project.</p>
+                <a class="" role="button" href="https://martino-web-design.github.io/image-gallery/" target="_blank">
+                  <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Landscape project -->
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="overlay item">
+              <img src="./img/landscape.jpg" alt="" class="img-tint" />
+              <div class="img-overlay">WordPress Site</div>
+              <div class="overlay-1">
+                <h3 class="title">Demo Landscape Site</h3>
+                <p>Here's a demo WordPress project created with custom theme development, CSS and JavaScript.</p>
+                <a class="" role="button" href="https://brianm.sgedu.site" target="_blank">
+                  <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Calculator -->
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="overlay item">
+              <img src="./img/calc.png" alt="" class="img-tint" />
+              <div class="img-overlay">Calculator</div>
+              <div class="overlay-1">
+                <h3 class="title">Calculator</h3>
+                <p>A calculator app created with JavaScript and jQuery.</p>
+                <a class="" role="button" href="https://martinowebdesign.com/Calculator App/index.html" target="_blank">
+                  <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
+        <!-- end row -->
+      </div>
+      <!-- end container -->
+    </div>
+    <!-- end Porfolio container  -->
 
-        <div class="col-12 col-md-6 col-xl-4">
-          <div class="overlay">
-            <h3 class="title">Image Gallery</h3>
-            <p>A simple React app to search for free stock images hosted on Pixabay. I used Create React App, Material-UI and Pixaby API for this project.</p>
-            <a class="btn btn-light" role="button" href="https://martino-web-design.github.io/image-gallery/" target="_blank">Check it Out</a>
-            <img class="bracket" src="img/c-brkt.svg" alt="graphic of open/close brackets">
-          </div>
-        </div>
+    <!-- About / Contact -->
+    <div class="bg-white">
+      <h2 id="about" class="p-4 mb-4 bg-dark text-light">About</h2>
 
-        <div class="col-12 col-md-6 col-xl-4">
-          <div class="overlay">
-            <h3 class="title">Weather App</h3>
-            <p>A weather app using data from the OpenWeatherMap API. Created with jQuery, JavaScript and custom weather icons.</p>
-            <a class="btn btn-light" role="button" href="Weather App/index.html" target="_blank">Check it Out</a>
-            <img class="bracket" src="img/c-brkt.svg" alt="graphic of open/close brackets">
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-xl-4">
-          <div class="overlay">
-            <h3 class="title">Royal Handyman & Maintenance Services</h3>
-            <p>A professional website created for a client using Bootstrap, jQuery and JavaScript.</p>
-            <a class="btn btn-light" role="button" href="http://royalhandymanhawaii.com" target="_blank">Check it Out</a>
-            <img class="bracket" src="img/c-brkt.svg" alt="graphic of open/close brackets">
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-xl-4">
-          <div class="overlay">
-            <h3 class="title">Demo Ecommerce Site</h3>
-            <p>A prototype website created with JavaScript, Bootstrap and jQuery.</p>
-            <a class="btn btn-light" role="button" href="Demo Produce Market/index.html" target="_blank">Check it Out</a>
-            <img class="bracket" src="img/c-brkt.svg" alt="graphic of open/close brackets">
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-xl-4">
-          <div class="overlay">
-            <h3 class="title">Demo Travel Blog</h3>
-            <p>This is a prototype website created with Bootstrap and a splash of jQuery.</p>
-            <a class="btn btn-light" role="button" href="Demo Travel Blog/index.html" target="_blank">Check it Out</a>
-            <img class="bracket" src="img/c-brkt.svg" alt="graphic of open/close brackets">
-          </div>
-        </div>
-
-
-        <div class="col-12 col-md-6 col-xl-4">
-          <div class="overlay">
-            <h3 class="title">Design Prototype</h3>
-            <p>Here's a design prototype created with Adobe XD. Best viewed on a tablet or larger screen. Also check out the current developmental site live <a style="color: #0091ff; text-transform: lowercase; font-weight: bold;" href="https://martino-web-design.github.io/painters/" target="_blank">here</a>.</p>
-            <a class="btn btn-light" role="button" href="https://xd.adobe.com/view/60058934-b625-40e8-7cd7-2b6cdf996ff9-1634/?hints=off" target="_blank">Check it Out</a>
-            <img class="bracket" src="img/c-brkt.svg" alt="graphic of open/close brackets">
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-xl-4">
-          <div class="overlay">
-            <h3 class="title">Measurement Conversions</h3>
-            <p>A measurement conversion app using JavaScript, jQuery and Vue.</p>
-            <a class="btn btn-light" role="button" href="Conversion App/index.html" target="_blank">CHECK IT OUT</a>
-            <img class="bracket" src="img/c-brkt.svg" alt="graphic of open/close brackets">
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-xl-4">
-          <div class="overlay">
-            <h3 class="title">Guitar Tuner</h3>
-            <p>A guitar tuner app using JavaScript, jQuery and audio files to create a variety of guitar tuning selections.</p>
-            <a class="btn btn-light" role="button" href="Guitar Tuner App/index.html" target="_blank">CHECK IT OUT</a>
-            <img class="bracket" src="img/c-brkt.svg" alt="graphic of open/close brackets">
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-xl-4">
-          <div class="overlay">
-            <h3 class="title">Color Picker</h3>
-            <p>A color picker app using Vanilla JavaScript, allowing user to create custom colors using either RGB or HSL color formats.</p>
-            <a class="btn btn-light" role="button" href="Color Picker App/index.html" target="_blank">CHECK IT OUT</a>
-            <img class="bracket" src="img/c-brkt.svg" alt="graphic of open/close brackets">
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-xl-4">
-          <div class="overlay">
-            <h3 class="title">Custom Icons</h3>
-            <p>Here is a collection of custom svg icons made using Sketch.</p>
-            <a class="btn btn-light" role="button" href="Custom Icons/index.html" target="_blank">Check it Out</a>
-            <img class="bracket" src="img/c-brkt.svg" alt="graphic of open/close brackets">
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-xl-4">
-          <div class="overlay">
-            <h3 class="title">Famous Landmarks Trivia</h3>
-            <p>A trivia card game created with the JavaScript framework Vue.</p>
-            <a class="btn btn-light" role="button" href="Trivia Game/index.html" target="_blank">Check it Out</a>
-            <img class="bracket" src="img/c-brkt.svg" alt="graphic of open/close brackets">
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-xl-4">
-          <div class="overlay">
-            <h3 class="title">Calculator</h3>
-            <p>A calculator app created with JavaScript and jQuery.</p>
-            <a class="btn btn-light" role="button" href="Calculator App/index.html" target="_blank">Check it Out</a>
-            <img class="bracket" src="img/c-brkt.svg" alt="graphic of open/close brackets">
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-xl-4">
-          <div class="overlay">
-            <h3 class="title">Tic Tac Toe</h3>
-            <p>An interactive Tic Tac Toe game built with JavaScript and jQuery.</p>
-            <a class="btn btn-light" role="button" href="TicTacToe Game/index.html" target="_blank">Check it Out</a>
-            <img class="bracket" src="img/c-brkt.svg" alt="graphic of open/close brackets">
-          </div>
-        </div>
-
-        </div>  <!-- end row  -->
-      </div>   <!-- end container  -->
-    </div>   <!-- end Porfolio  -->
-
-    <!-- About -->
-
-    <h2 id="about" class="p-4 mb-4 bg-dark text-light">About</h2>
-    <div class="container">
-      <p>As a new front end developer, I'm able to create modern websites from scratch, design logos and other digital artwork, and create custom code to make your website unique and interactive.</p>
-      <h3 class="d-inline pr-4">Skills</h3>
-      <p class="d-inline">I'm actively working with these technologies and continually exploring new ones:</p>
-      <div class="row my-4">
+      <div class="container">
+        <p>As a new front end developer, I'm able to create modern websites from scratch, design logos and other digital artwork, and create custom code to make your website unique and interactive.</p>
+        <h3 class="d-inline pr-4">Skills</h3>
+        <p class="d-inline">I'm actively working with these technologies and continually exploring new ones:</p>
+        <div class="row my-4">
           <ul class="col-6 pl-5 skills gray-dark">
             <li>HTML</li>
             <li>CSS, SASS</li>
@@ -218,44 +301,41 @@
             <li>Vue.js</li>
             <li>React</li>
           </ul>
+        </div>
       </div>
-    </div>
 
-    <!-- Contact -->
-    <h2 id="contact" class="p-4 mb-4 bg-dark text-light">Contact</h2>
-    <div class="container">
-      <div class="row contact mb-5 mx-lg-5">
-        <div class="col-12 col-md-6 my-4">
-          <p>Send me a message so we can discuss your next project!</p>
-          <div class="col my-4">
-            <a href="mailto:martinowebdesign@gmail.com?subject=Porfolio inquiry"><img class="icon mail m-3" src="img/email2.svg" alt="Email Icon"></a>
-            <span class="address">martinowebdesign@gmail.com</span>
+      <h2 id="contact" class="p-4 mb-4 bg-dark text-light">Contact</h2>
+      <div class="container">
+        <div class="row contact mb-5 mx-lg-5">
+          <div class="col-12 col-md-6 my-4">
+            <p>Send me a message so we can discuss your next project!</p>
+            <div class="col my-4">
+              <a href="mailto:martinowebdesign@gmail.com?subject=Porfolio inquiry"><img class="icon mail m-3" src="img/email2.svg" alt="Email Icon" /></a>
+              <span class="address">martinowebdesign@gmail.com</span>
+            </div>
+          </div>
+
+          <div class="col">
+            <img src="img/florencecoffee.png" class="contact-logo" alt="Portfolio photo, Brian Martino" />
           </div>
         </div>
-
-        <div class="col">
-          <img src="img/florencecoffee.png" class="contact-logo"alt="Portfolio photo, Brian Martino">
-        </div>
-
       </div>
-    </div>
 
-    <footer>
-      <nav class="navbar navbar-expand-sm text-secondary pt-4">
-        <div class="container">
-          <span class="copy">&copy; 2019 Brian Martino</span>
-          <a id="home" href="#top"><img class="icon" src="img/house.svg" alt="Home Icon"></a>
-        </div>
-      </nav>
-    </footer>
+      <footer>
+        <nav class="navbar navbar-expand-sm text-secondary pt-4">
+          <div class="container pl-sm-4 pr-sm-4">
+            <span class="copy">&copy; 2020 Brian Martino</span>
+            <a id="home" href="#top"><img class="icon" src="img/house.svg" alt="Home Icon" /></a>
+          </div>
+        </nav>
+      </footer>
+    </div>
 
     <!-- Scripts -->
 
-    <script   src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous">
-    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="script.js" type="text/javascript" charset="utf-8"></script>
-
   </body>
 </html>
