@@ -234,7 +234,8 @@ footer {
     font-size: 24px;
   }
 
-  p {
+  p,
+  .copy {
     font-size: 14px;
   }
 
@@ -291,6 +292,11 @@ footer {
   .overlay {
     height: 250px;
     margin-bottom: 16px;
+  }
+
+  footer nav.navbar {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
